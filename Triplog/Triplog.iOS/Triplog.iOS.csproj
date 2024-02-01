@@ -106,6 +106,9 @@
         <Reference Include="Xamarin.iOS"/>
     </ItemGroup>
     <ItemGroup>
+        <PackageReference Include="Microsoft.AppCenter" Version="5.0.3" />
+        <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.3" />
+        <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.3" />
         <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012"/>
     </ItemGroup>
     <ItemGroup>
