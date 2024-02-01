@@ -41,6 +41,12 @@
         <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
         <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
     </PropertyGroup>
+    <ItemGroup Condition=" '$(Configuration)' != 'GooglePlay' ">
+        <PackageReference Include="Microsoft.AppCenter.Distribute" Version="5.0.3" />
+    </ItemGroup>
+    <ItemGroup Condition=" '$(Configuration)' == 'GooglePlay' ">
+        <PackageReference Include="Microsoft.AppCenter.DistributePlay" Version="3.3.0" />
+    </ItemGroup>
     <ItemGroup>
         <Reference Include="Mono.Android"/>
         <Reference Include="System"/>
@@ -52,6 +58,7 @@
         <PackageReference Include="Microsoft.AppCenter" Version="5.0.3" />
         <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.3" />
         <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.3" />
+        <PackageReference Include="Microsoft.AppCenter.Distribute" Version="5.0.3" />
         <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012"/>
     </ItemGroup>
     <ItemGroup>
@@ -69,6 +76,7 @@
         <AndroidResource Include="Resources\layout\Toolbar.axml"/>
         <AndroidResource Include="Resources\values\styles.xml"/>
         <AndroidResource Include="Resources\values\colors.xml"/>
+        <AndroidResource Include="Resources\xml\appcenter_backup_rule.xml" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\Triplog\Triplog.csproj">

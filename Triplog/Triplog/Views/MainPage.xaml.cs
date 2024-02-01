@@ -19,8 +19,8 @@ namespace Triplog.Views
             {
                 new TripLogEntry
                 {
-                    Title = "San jose del pacifico",
-                    Notes = "Sorprendente",
+                    Title = "CDMX",
+                    Notes = "Mexico",
                     Rating = 3,
                     Date = new DateTime(2023, 12, 19),
                     Latitude = 38.8977,
@@ -28,8 +28,8 @@ namespace Triplog.Views
                 },
                 new TripLogEntry
                 {
-                    Title = "Zimapan",
-                    Notes = "Bonito",
+                    Title = "LOS CABOS",
+                    Notes = "Mexico",
                     Rating = 4,
                     Date = new DateTime(2023, 12, 19),
                     Latitude = 38.8977,
@@ -37,8 +37,8 @@ namespace Triplog.Views
                 },
                 new TripLogEntry
                 {
-                    Title = "Toluca",
-                    Notes = "Frio",
+                    Title = "Munich",
+                    Notes = "Alemania",
                     Rating = 2,
                     Date = new DateTime(2023, 12, 19),
                     Latitude = 38.8977,
